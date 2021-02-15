@@ -63,17 +63,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
-
+Hoe doe ik hier een image in??
 
 
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -kies uit zwart, rood óf blauw-
+**Je startniveau:** -kies uit responsive óf surface plane-
+Ik ben een herkanser, ik had frontend in mijn tweede jaar erg onderschat en zat zelf met wat problemen. Doordat ik niet bij bleef en achter liep merkte je al snel dat ik er niks meer van begreep. Ik heb dus eigenlijk al bijna 2 jaar niet meer gecodeerd dus val zeker onder de blauwe piste groep.
 
 **Je focus:** -kies uit responsive óf surface plane-
+Ik weet niet zo goed wat surface plane is, als daarmee wordt bedoeld hoe het eruit ziet lijkt me dat erg leuk maar dat het responsive vind ik zelf ook erg belamngrijk. Ik vind dat belangrijk omdat ik nu al een tijdje interaction vakken volg en weet hoe vervelend het is als een site niet goed mee werkkt op het device waar je mee bezig bent.
 
 **Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+Ik weet wel al dat ik een website na wil gaan maken en niet de website van informatie architectuur wil gaan gebruiken. Welke site dit gaat worden weet ik nog niet.
+
+Update: de website die ik ga gebruiken is Uber Eats.
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
