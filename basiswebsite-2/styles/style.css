@@ -1,0 +1,23 @@
+/* CSS Document */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F6916A;
+}
+
+main {
+	background-color: white;
+}
+
+Footer {
+	background-color: black;
+	color: white;
+}
+
+img {
+	width: 1 rem;
+}
