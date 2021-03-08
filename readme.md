@@ -40,6 +40,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 
+Uhh ik weet nu eigenlijk niet wat goed en fout is en dat vind ik erg lastig, het tempo is best hoog maar merk wel dat ik het leuk vind. Ikk weet nog niet helemaal hoe ik alles ga doen maar merk wel al dat ik steeds meer dingen leer, alleen weet ik niet of mijn tempo te laag is.
+
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
