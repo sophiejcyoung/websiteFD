@@ -5,8 +5,26 @@
 	box-sizing: border-box;
 }
 
-body {
+h1 {
+	font-family: UberMove-Bold, sans-serif;
+}
+
+/*hoe voeg ik deze font toe?*/
+
+p {
+	font-family: UberMoveText-Regular, sans-serif;
+}
+
+header {
 	background-color: #F6916A;
+}
+
+#header2 {
+	background-color: white;
+}
+
+body {
+	background-color: white;
 }
 
 main {

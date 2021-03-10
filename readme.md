@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** Sophie Young
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -59,6 +59,26 @@ Uhh ik weet nu eigenlijk niet wat goed en fout is en dat vind ik erg lastig, het
 ### Verslag van meeting
 
 -na afloop snel uitkomsten vastleggen-
+Ik had wat foutjes in de code staan en alle vragen die ik had had ik als comment in de html eronder gezet. Ik had de meeting zonder andere studenten omdat we hem op een ander moment hadden.
+
+DE foutjes waren voornamelijk volgorde of dat ik een button ipv een form bijvoorbeeld. Verder heb ik nog wat handige tips gekregen en sites waar ik even naar zou kunnen kijken zoals:
+1. https://stackoverflow.com/questions/14494747/how-to-add-images-to-readme-md-on-github
+2. https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form
+3. Snel toets voor comment: Cmd+/ Single line comment
+4. https://lisacatalano.github.io/brackets_course/mac.html
+5. Volgorde van html:
+   <html>
+  <head>
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
 
 
 
@@ -69,7 +89,6 @@ Hoe doe ik hier een image in??
 
 
 ## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
 **Je startniveau:** -kies uit responsive óf surface plane-
 Ik ben een herkanser, ik had frontend in mijn tweede jaar erg onderschat en zat zelf met wat problemen. Doordat ik niet bij bleef en achter liep merkte je al snel dat ik er niks meer van begreep. Ik heb dus eigenlijk al bijna 2 jaar niet meer gecodeerd dus val zeker onder de blauwe piste groep.
@@ -81,11 +100,13 @@ Ik weet niet zo goed wat surface plane is, als daarmee wordt bedoeld hoe het eru
 Ik weet wel al dat ik een website na wil gaan maken en niet de website van informatie architectuur wil gaan gebruiken. Welke site dit gaat worden weet ik nog niet.
 
 Update: de website die ik ga gebruiken is Uber Eats.
+Pagina 1: https://www.ubereats.com/nl
+Detailpagina: https://www.ubereats.com/amsterdam/food-delivery/mcdonalds-albert-cuypstraat/4G3eA01ESeSKFSKtFKLB1Q?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjEwMTIlMjBXUCUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUo2emJiME1FSnhrY1JBaFhaY0ZyZUFCTSUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E1Mi4zNjcyOTM1JTJDJTIybG9uZ2l0dWRlJTIyJTNBNC44OTA1NTQxJTdE
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/Pagina1.png" width="375px" alt="de hoofdpagina van uber eats als je nog niks hebt ingevoerd(zerostate)">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/detailpagina.png" width="375px" alt="Zodra je op macdonalds klikt, de hoofdbestelpagina van macdonals">
