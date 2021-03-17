@@ -5,23 +5,85 @@
 	box-sizing: border-box;
 }
 
-h1 {
-	font-family: UberMove-Bold, sans-serif;
-}
-
-/*hoe voeg ik deze font toe?*/
-
-p {
-	font-family: UberMoveText-Regular, sans-serif;
+.head {
+	display: flex;
 }
 
 header {
 	background-color: #F6916A;
 }
 
-#header2 {
+#bezorg {
+	font-family: sans-serif;
+	border: none;
+	padding: 1em;
+	padding right: 1, 5em;
+}
+
+#background {
+	justify-content: space-around;
+	/*hoe zorg ik dat de afbeelding de he;le pagina dekt*/
+}
+
+/*werkt niet...*/
+/*#hamburger {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+.nav {
+	display: none;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}*/
+
+a {
+	color: black;
+}
+
+.link {
+	font-family: bold, sans-serif;
+	text-decoration-color: black;
+}
+
+button {
+	border: none;
+}
+
+
+h1 {
+	justify-content: center;
+	font-family: Ubermovemedium;
+	font-family: bold;
+	font-size: 52px;
+
+}
+
+h2 {
+	margin-left: 1.5em;
+	font-family: Ubermovemedium;
+	font-family: bold;
+	font-size: 36px;
+}
+
+/*hoe voeg ik deze font toe?, heb hem wel gedwonload(Ubermovemedium)*/
+
+p {
+	font-family: UberMoveText-Regular, sans-serif;
+}
+
+
+#detail header {
 	background-color: white;
 }
+
 
 body {
 	background-color: white;
@@ -31,38 +93,68 @@ main {
 	background-color: white;
 }
 
-Footer,
-img {
+li {
+	font-family: medium, sans-serif;
+	list-style: none;
+	margin: 1em;
+}
+
+
+
+
+
+
+
+footer {
 	background-color: black;
+}
+
+footer,
+img {
 	color: white;
+}
+
+footer a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: thin sans-serif;
+	color: white;
+}
+
+footer p {
+	margin-left: 2.5em;
 }
 
 #logoblack {
 	display: flex;
 	padding-top: 1rem;
-	padding-left: 1rem;
 	width: 20rem;
+	margin-left: 2.5rem;
 }
 
-li {
-	list-style: none;
-}
 
 #appstore,
 #googleplay {
-	padding-left: 1rem;
+	margin-left: 2.5rem;
 	width: 10rem;
 }
 
 #twitter,
 #facebook,
 #instagram {
-	padding-left: 1rem;
-	width: 10rem;
-	/* hoe doe ik die lijnen weg? */
+	margin-left: 1rem first-of-type;
+	width: 4em;
+	height: 3em;
+
+	/* hoe gebruik ik die first of type?
+	? */
 }
 
-/* width werkt niet mee?? */
+#sign {
+	width: 1.5em;
+	height: 1.5em;
+	margin-right: 0.5em;
+}
 
 #socialmedia {
 	display: flex;

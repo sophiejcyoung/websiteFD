@@ -9,31 +9,32 @@
 
 
 	<link href="styles/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
-<!--BIJ ALLE AFBEELDINGEN MOET IK NOG ALT-->
 
 <body>
 	<!--staat alle content in, body-->
 	<header>
 		<button></button>
 		<!--Geen icon gebruiken maar, button, maak hier een hamburger menu van-->
-		<nav>
-			<a href="index.html">Inloggen</a>
-			<a href="index.html">Maak een zakelijk account aan</a>
-			<a href="index.html">Je restaurant toevoegen</a>
-			<a href="index.html">Aanmelden als bezorger</a>
+		<nav id="hamburger">
+			<a class="nav" href="index.html">Inloggen</a>
+			<a class="nav" href="index.html">Maak een zakelijk account aan</a>
+			<a class="nav" href="index.html">Je restaurant toevoegen</a>
+			<a class="nav" href="index.html">Aanmelden als bezorger</a>
 		</nav>
 		<!-- Is de navigatie een list?? Of is de eerstde een afbeelding?-->
-		<a href="index.html"><img alt="Logo ubereats" src="images/Logoubereats.png"></a>
-		<button type="button">Inloggen</button>
+		<a class="head" href="index.html"><img class="head" alt="Logo ubereats" src="images/Logoubereats.png"></a>
+		<button class="head">Inloggen</button>
 		<!--<img src="images/Inloggen.png" width="100 rem", oude html, is deze hoierboven beter?>-->
 		<!--even voor nu anders kon ik niks zien, ook wil ik misschien andere afbeelding gebruiken, width hier weg!!!-->
 
 		<h1>Heb je trek? Dan ben je op het juiste adres</h1>
 
-		<form>
-			<input type="text">
-			<select name="wanneer bezorgen" id="">
+		<form id="form">
+			<input type="text" />
+			<!--Hoe krijg ik bezorgadres invoeren in dit vlak?-->
+			<select name="wanneer bezorgen" id="bezorg">
 				<option value="deliver">Zo snel mogelijk</option>
 				<option value="1hour">1 Hour</option>
 				<option value="2hour">2 Hour</option>
@@ -42,7 +43,6 @@
 			</select>
 			<button>Gerechten zoeken</button>
 			<!--moet ik met css de tekst in de buttons krijgen??-->
-
 			<!--<img src="">Bezorgadres invoeren</input>
 			<input><img src="">Nu bezorgen<img src=""></li>
 			<li>Gerechten zoeken</li>, dit is oude versie-->
@@ -50,7 +50,9 @@
 
 		<!--Geen list, maar een form!!, input, select en button!!-->
 
-		<p><a href="index.html">Inloggen</a> voor je recente adressen</p>
+		<p><a class="link" href="index.html">Inloggen</a> voor je recente adressen</p>
+
+		<img id="background" alt="background" src="images/background.png">
 
 		<!-- uit oefeningen van les twee-->
 
@@ -61,8 +63,8 @@
 		<section>
 			<img alt="App ubereats" src="images/Ubereatsapp.png">
 			<h2>Er is nog veel meer leuks in de iPhone-app.</h2>
-			<Button>Download app!
-			</Button>
+			<button>Download app!
+			</button>
 			<!--<a><img src="images/Downloadapp.png"></a>-->
 			<!--Gebruik ik hier </button> of <a>???, het is een button!!-->
 			<!-- Wat is correct? maak je een button met html of maak je eerst de knop en maak je heb via css-->
@@ -76,22 +78,23 @@
 			<!-- APARTE ARTICLES VAN MAKEN, moet de section er ook nog omheen?!!-->
 			<article>
 				<img alt="illustratie eten" src="images/Afbeelding1.png">
-				<h2>Zorg dat je medewerkers goed eten</h2>
-				<a href="index.html">Maak een zakelijk account aan</a>
+				<h3>Zorg dat je medewerkers goed eten</h3>
+				<a class="link" href="index.html">Maak een zakelijk account aan</a>
 			</article>
 			<!--Moeten de a'tjes in de p'tjes of alleen een a? JE KAN BETER ALLEEN A GEBRUIKEN WANT HELE TEKST IS EEN LINK-->
 			<article>
 				<img alt="illustratie pan" src="images/Afbeelding2.png">
-				<h2>Jouw restaurant kan ook thuisbezorgen</h2>
-				<a href="index.html">Je restaurant toevoegen</a>
+				<h3>Jouw restaurant kan ook thuisbezorgen</h3>
+				<a class="link" href="index.html">Je restaurant toevoegen</a>
 			</article>
 			<article>
 				<img alt="illustratie lopend meisje" src="images/Afbeelding3.png">
-				<h2>Bezorg via Uber Eats</h2>
-				<a href="index.html">Aanmelden als bezorger</a>
+				<h3>Bezorg via Uber Eats</h3>
+				<a class="link" href="index.html">Aanmelden als bezorger</a>
 			</article>
 
 		</section>
+		<!-- in article h3 (want zit dieper) -->
 
 		<section>
 			<!-- section met swipe side bar, moet ik nog onderzoeken-->
@@ -100,7 +103,7 @@
 		<section>
 			<h2>Steden bij jou in de buurt</h2>
 			<img alt="Map Nederland" src="images/Map.png">
-			<p><a href="index.html">Alle ruim 500 steden bekijken</a></p>
+			<p><a class="link" href="index.html">Alle ruim 500 steden bekijken</a></p>
 		</section>
 
 		<section>
@@ -154,35 +157,35 @@
 			</section>
 
 			<ul>
-				<li><a>Over Uber Eats</a></li>
-				<li><a>Onze blog</a></li>
-				<li><a>Maak een zakelijk account aan</a></li>
-				<li><a>Je restaurant toevoegen</a></li>
-				<li><a>Aanmelden als bezorger</a></li>
+				<li><a href="detail.html">Over Uber Eats</a></li>
+				<li><a href="detail.html">Onze blog</a></li>
+				<li><a href="detail.html">Maak een zakelijk account aan</a></li>
+				<li><a href="detail.html">Je restaurant toevoegen</a></li>
+				<li><a href="detail.html">Aanmelden als bezorger</a></li>
 			</ul>
-			<!--moeten dit twee lijsten zijn & MOETEN DEZE OOK IN SECTIONS??, HREF MOET ER NOG BIJ-->
+			<!--moeten dit twee lijsten zijn & MOETEN DEZE OOK IN SECTIONS> nee hoeft niet ul is een section??, HREF MOET ER NOG BIJ-->
 			<ul>
-				<li><a>Hulp krijgen</a></li>
-				<li><a>Alle steden bekijken</a></li>
-				<li><a>Alle landen bekijken</a></li>
-				<li><a>Restaurants bij mij in de buurt</a></li>
-				<li><a>Bespaar op je eerste bestelling</a></li>
-				<li><img alt="sign" src="images/Nederlands.png"><a>Nederlands</a></li>
+				<li><a href="detail.html">Hulp krijgen</a></li>
+				<li><a href="detail.html">Alle steden bekijken</a></li>
+				<li><a href="detail.html">Alle landen bekijken</a></li>
+				<li><a href="detail.html">Restaurants bij mij in de buurt</a></li>
+				<li><a href="detail.html">Bespaar op je eerste bestelling</a></li>
+				<li><img id="sign" alt="sign" src="images/Nederlands.png"><a>Nederlands</a></li>
 			</ul>
 
 			<hr>
-			<!--hoe trek ik die streep-->
+			<!--hoe trek ik die streep, nou met hr-->
 			<ul id='socialmedia'>
-				<li><button><img id='facebook' alt="facebook" src="images/Facebook.png"></button></li>
-				<li><button><img id='twitter' alt="twitter" src="images/Twitter.png"></button></li>
-				<li><button><img id='instagram' alt="instagram" src="images/Instagram.png"></button></li>
+				<li><a><img id='facebook' alt="facebook" src="images/Facebook.png"></a></li>
+				<li><a><img id='twitter' alt="twitter" src="images/Twitter.png"></a></li>
+				<li><a><img id='instagram' alt="instagram" src="images/Instagram.png"></a></li>
 			</ul>
-			<!--ik weet even niet hoe ik deze afbeeldingen moet doen, buttons of linkjes?????-->
+			<!--ik weet even niet hoe ik deze afbeeldingen moet doen, buttons of linkjes?????> linkjes-->
 
 			<ul>
-				<li><a>Privacybeleid</a></li>
-				<li><a>Voorwaarden</a></li>
-				<li><a>prijzen</a></li>
+				<li><a href="detail.html">Privacybeleid</a></li>
+				<li><a href="detail.html">Voorwaarden</a></li>
+				<li><a href="detail.html">prijzen</a></li>
 			</ul>
 
 			<p>

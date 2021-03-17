@@ -9,12 +9,12 @@
 
 
 	<link href="styles/style.css" rel="stylesheet">
+
 </head>
 
-
-<body>
-	<header id="header2">
-		<!--staat alle content in, body-->
+<body id="detail">
+	<header>
+		<!-- header weghalen maar over de body bijvoorbeeld zetten en dan #detail head, staat alle content in, body-->
 		<button></button>
 		<!--Geen icon gebruiken maar, button, maak hier een hamburger menu van-->
 		<nav>
@@ -26,7 +26,7 @@
 		<!-- Is de navigatie een list?? Of is de eerstde een afbeelding?-->
 		<a href="index.html"><img alt="logowhite" src="images/logowhite.png"></a>
 		<!-- Moet ik hier href gebruiken?? zoniet wat dan wel??-->
-		<button type="button">Inloggen</button>
+		<button>Inloggen</button>
 		<!--<img src="images/Inloggen.png" width="100 rem", oude html, is deze hoierboven beter?>-->
 		<!--even voor nu anders kon ik niks zien, ook wil ik misschien andere afbeelding gebruiken, width hier weg!!!-->
 		<hr>
@@ -87,7 +87,7 @@
 			<a href="detail.html">
 				<h3>Single Maestro</h3>
 				<p>Zoals een klassieke burger bedoeld is. Te herkennen aan z’n 100% rundvlees...</p>
-				<h3>€6.95</h3>
+				<span>€6.95</span>
 				<!-- is dit een h3?-->
 				<img alt="singlemaestroburger" src="images/singlemaestro.png">
 			</a>
@@ -100,7 +100,7 @@
 			<a href="detail.html">
 				<h3>Chicken McNuggets 20</h3>
 				<p>20 stukjes malse kip met een krokant laagje.</p>
-				<h3>€5.50</h3>
+				<span>€5.50</span>
 				<img alt="chickennuggets" src="images/Chickennuggets.png">
 			</a>
 		</section>
@@ -111,7 +111,7 @@
 			<a href="detail.html">
 				<h3>Happy Meal Chicken McNuggets 4</h3>
 				<p>Happy Meal met 4 stukjes malse kip met een krokant laagje.</p>
-				<h3>€4.60</h3>
+				<span>€4.60</span>
 				<img alt="happymeal" src="images/happymeal.png">
 			</a>
 		</section>
@@ -122,7 +122,7 @@
 			<a href="detail.html">
 				<h3>Franse Frietjes</h3>
 				<p>Goudgele frietjes, gebakken in 100% plantaardige olie.</p>
-				<h3>€3.10</h3>
+				<span>€3.10</span>
 				<img alt="friet" src="images/friet.png">
 			</a>
 		</section>
@@ -133,7 +133,7 @@
 			<a href="detail.html">
 				<h3>Grilled Chicken Salad - Sweet en Spicy</h3>
 				<p>Een heerlijke groene slamix met gemarineerde en gegrilde kip, friszure rode appelstukjes, maïs,...</p>
-				<h3>€5.75</h3>
+				<span>€5.75</span>
 				<img alt="salade" src="images/friet.png">
 			</a>
 		</section>
@@ -144,7 +144,7 @@
 			<a href="detail.html">
 				<h3>McFlurry Twix met Karamelsaus</h3>
 				<p>Een heerlijke McFlurry met stukjes Twix en smeuïge karamelsaus</p>
-				<h3>€4.15</h3>
+				<span>€4.15</span>
 				<img alt="twixmacflurry" src="images/twixmacflurry.png">
 			</a>
 		</section>
@@ -155,7 +155,7 @@
 			<a href="detail.html">
 				<h3>Coca-Cola Zero Sugar medium</h3>
 				<p>Verfrissende Coca-Cola Zero.</p>
-				<h3>€2.95</h3>
+				<span>€2.95</span>
 				<img alt="cocacola" src="images/Cocacola.png">
 			</a>
 		</section>
@@ -170,35 +170,35 @@
 			</section>
 
 			<ul>
-				<li><a>Over Uber Eats</a></li>
-				<li><a>Onze blog</a></li>
-				<li><a>Maak een zakelijk account aan</a></li>
-				<li><a>Je restaurant toevoegen</a></li>
-				<li><a>Aanmelden als bezorger</a></li>
+				<li><a href="detail.html">Over Uber Eats</a></li>
+				<li><a href="detail.html">Onze blog</a></li>
+				<li><a href="detail.html">Maak een zakelijk account aan</a></li>
+				<li><a href="detail.html">Je restaurant toevoegen</a></li>
+				<li><a href="detail.html">Aanmelden als bezorger</a></li>
 			</ul>
-			<!--moeten dit twee lijsten zijn & MOETEN DEZE OOK IN SECTIONS??, HREF MOET ER NOG BIJ-->
+			<!--moeten dit twee lijsten zijn & MOETEN DEZE OOK IN SECTIONS> nee hoeft niet ul is een section??, HREF MOET ER NOG BIJ-->
 			<ul>
-				<li><a>Hulp krijgen</a></li>
-				<li><a>Alle steden bekijken</a></li>
-				<li><a>Alle landen bekijken</a></li>
-				<li><a>Restaurants bij mij in de buurt</a></li>
-				<li><a>Bespaar op je eerste bestelling</a></li>
-				<li><img alt="sign" src="images/Nederlands.png"><a>Nederlands</a></li>
+				<li><a href="detail.html">Hulp krijgen</a></li>
+				<li><a href="detail.html">Alle steden bekijken</a></li>
+				<li><a href="detail.html">Alle landen bekijken</a></li>
+				<li><a href="detail.html">Restaurants bij mij in de buurt</a></li>
+				<li><a href="detail.html">Bespaar op je eerste bestelling</a></li>
+				<li><img id="sign" alt="sign" src="images/Nederlands.png"><a>Nederlands</a></li>
 			</ul>
 
 			<hr>
-			<!--hoe trek ik die streep-->
+			<!--hoe trek ik die streep, nou met hr-->
 			<ul id='socialmedia'>
-				<li><button><img id='facebook' alt="facebook" src="images/Facebook.png"></button></li>
-				<li><button><img id='twitter' alt="twitter" src="images/Twitter.png"></button></li>
-				<li><button><img id='instagram' alt="instagram" src="images/Instagram.png"></button></li>
+				<li><a><img id='facebook' alt="facebook" src="images/Facebook.png"></a></li>
+				<li><a><img id='twitter' alt="twitter" src="images/Twitter.png"></a></li>
+				<li><a><img id='instagram' alt="instagram" src="images/Instagram.png"></a></li>
 			</ul>
-			<!--ik weet even niet hoe ik deze afbeeldingen moet doen, buttons of linkjes?????-->
+			<!--ik weet even niet hoe ik deze afbeeldingen moet doen, buttons of linkjes?????> linkjes-->
 
 			<ul>
-				<li><a>Privacybeleid</a></li>
-				<li><a>Voorwaarden</a></li>
-				<li><a>prijzen</a></li>
+				<li><a href="detail.html">Privacybeleid</a></li>
+				<li><a href="detail.html">Voorwaarden</a></li>
+				<li><a href="detail.html">prijzen</a></li>
 			</ul>
 
 			<p>

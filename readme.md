@@ -61,7 +61,7 @@ Uhh ik weet nu eigenlijk niet wat goed en fout is en dat vind ik erg lastig, het
 -na afloop snel uitkomsten vastleggen-
 Ik had wat foutjes in de code staan en alle vragen die ik had had ik als comment in de html eronder gezet. Ik had de meeting zonder andere studenten omdat we hem op een ander moment hadden.
 
-DE foutjes waren voornamelijk volgorde of dat ik een button ipv een form bijvoorbeeld. Verder heb ik nog wat handige tips gekregen en sites waar ik even naar zou kunnen kijken zoals:
+De foutjes waren voornamelijk volgorde of dat ik een button ipv een form bijvoorbeeld. Verder heb ik nog wat handige tips gekregen en sites waar ik even naar zou kunnen kijken zoals:
 1. https://stackoverflow.com/questions/14494747/how-to-add-images-to-readme-md-on-github
 2. https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form
 3. Snel toets voor comment: Cmd+/ Single line comment
