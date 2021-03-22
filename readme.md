@@ -29,9 +29,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 2 (week 5)
+Ik ben nu helemaal klaar met de html dus laat die nu checken. Als het goed is is het nu goed maar ik geloof als ik met css dingen moet toevoegen dat ik ook nog wat moet stoeien met html.
 
--same as voortgang 1-
-
+### Verslag van meeting
+De errors heb ik weggehaald en kreeg goeie feedback(bijna alles was goed). Alleen nog even overal bij de linkjes een  href toevoegen. Ook kreeg ik een nieuwe tool geleerd namelijk de <span> gebruiken voor sommige tekst of p maar ik kies span zodat ik het beter kan stylen (vind robbert slim).
+	
+Ik kan nu starten met de css.
 
 
 ## Voortgang 1 (week 3)
