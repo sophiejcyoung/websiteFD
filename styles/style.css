@@ -14,52 +14,104 @@ header {
 	height: 100vh;
 }
 
-#navigation {
+#detail header {
+	background-color: white;
+	background-image: none;
+	height: 16em;
+}
+
+nav ul {
 	display: flex;
-	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1em;
+}
+
+nav {
+	display: flex;
+	width: 100%;
 }
 
 #inlog {
-	border-radius: 130px;
+	border-radius: 3em;
 	border-color: white;
-	padding: 10px;
+	border-style: none;
+	padding: 1em;
 	width: 6em;
 	height: 3em;
-	font-size: 14px;
+	font-size: 1em;
 	display: flex;
-	justify-content: flex-end;
+	shadow toevoegen
 	/*Why doet deze het niet?*/
+}
+
+#detail select,
+button {
+	margin-top: 1em;
+	border-style: none;
+	color: black;
+	font-size: 1em;
+	width: 7em;
+	height: 2em;
+}
+
+#detail section:first-of-type {
+	display: flex;
+	justify-content: space-between;
+}
+
+#offer {
+	background-image: url("../images/Mac.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin-bottom: 0;
+}
+
+#search {
+	border-radius: 2em;
+	search teken nog toevoegen
 }
 
 .head {
 	height: 3em;
 	display: flex;
-	justify-content: flex-start;
+	responsive maken
 	/*Why doet deze het niet?*/
 }
-
 
 
 header form {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 /*hoe krijg ik ze onder elkaar, gelukt*/
 
 .bezorg {
 	font-family: sans-serif;
+	font-size: 1em;
 	border: none;
 	padding: 1em;
 	padding right: 1, 5em;
 	margin: 1em;
+	height: 3.5em;
+	width: 30em;
+	display: flex;
+	justify-content: center;
 }
 
-.bezorg:last-of-type(3) {
+button.bezorg:first-of-type {
 	color: white;
 	background: black;
-	/*hoezo doet hij geen last of type*/
 }
+
+select {
+	color: black;
+	maak hier nog second of type van
+}
+
 
 
 /*werkt niet...*/
@@ -81,8 +133,46 @@ header form {
   top: 0;
 }*/
 
+#applicatie {
+
+	height: 6em;
+	width: 6em;
+	display: flex;
+	justify-content: center;
+}
+
+#apps {
+	margin-top: 1em;
+	display: flex;
+	justify-content: center;
+}
+
+.illustration {
+	font-size: 1em;
+	margin-left: 0;
+}
+
+.illustration h3 {
+	font-size: 1.5em;
+}
+
+main button {
+	font-family: sans-serif;
+	font-size: 1em;
+	border: none;
+	padding: 1em;
+	padding right: 1, 5em;
+	margin: 1em;
+	height: 3.5em;
+	width: 30em;
+	display: flex;
+	justify-content: center;
+	/*Why doet deze het niet?*/
+}
+
 a {
 	color: black;
+
 }
 
 .link {
@@ -90,31 +180,27 @@ a {
 	text-decoration-color: black;
 }
 
-main button {
-	border: none;
-	font-family: sans-serif;
-	width: 30em;
-	height: 4em;
-	margin: 1em;
-	justify-items: center;
-	/*Why doet deze het niet?*/
+#link {
+	margin-left: 1em;
 }
 
-
 h1 {
+	display: flex;
 	justify-content: center;
 	font-family: Ubermovemedium;
 	font-family: bold;
-	font-size: 52px;
+	font-size: 4em;
+	padding: 0.5em;
+	margin: 0;
 	/*font doet nog steeds niet wat ik wil ?*/
 
 }
 
 h2 {
-	margin-left: 1.5em;
+	margin-left: 1em;
 	font-family: Ubermovemedium;
 	font-family: bold;
-	font-size: 36px;
+	font-size: 2em;
 }
 
 /*hoe voeg ik deze font toe?, heb hem wel gedwonload(Ubermovemedium)*/
@@ -123,10 +209,6 @@ p {
 	font-family: UberMoveText-Regular, sans-serif;
 }
 
-
-#detail header {
-	background-color: white;
-}
 
 
 body {
@@ -140,7 +222,7 @@ main {
 li {
 	font-family: medium, sans-serif;
 	list-style: none;
-	margin: 1em;
+	margin-top: 1em;
 }
 
 
@@ -154,6 +236,11 @@ footer {
 	background-color: black;
 }
 
+footer p {
+	margin-top: 1em;
+	margin-left: 2.5rem;
+}
+
 footer,
 img {
 	color: white;
@@ -164,10 +251,6 @@ footer a {
 	font-size: 20px;
 	font-family: thin sans-serif;
 	color: white;
-}
-
-footer p {
-	margin-left: 2.5em;
 }
 
 #logoblack {
@@ -186,12 +269,8 @@ footer p {
 #twitter,
 #facebook,
 #instagram {
-	margin-left: 1rem first-of-type;
 	width: 4em;
 	height: 3em;
-
-	/* hoe gebruik ik die first of type?
-	? */
 }
 
 #sign {
@@ -202,8 +281,4 @@ footer p {
 
 #socialmedia {
 	display: flex;
-}
-
-img {
-	width: 1 rem;
 }

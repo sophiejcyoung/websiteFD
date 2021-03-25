@@ -15,20 +15,27 @@
 <body>
 	<!--staat alle content in, body-->
 	<header>
-		<button></button>
 		<!--Geen icon gebruiken maar, button, maak hier een hamburger menu van-->
 
-		<selection id="navigation">
+		<section id="navigation">
 			<nav id="hamburger">
-				<a class="nav" href="index.html">Inloggen</a>
-				<a class="nav" href="index.html">Maak een zakelijk account aan</a>
-				<a class="nav" href="index.html">Je restaurant toevoegen</a>
-				<a class="nav" href="index.html">Aanmelden als bezorger</a>
+				<ul>
+					<li>
+						<a class="nav" href="index.html">Inloggen</a>
+						<a class="nav" href="index.html">Maak een zakelijk account aan</a>
+						<a class="nav" href="index.html">Je restaurant toevoegen</a>
+						<a class="nav" href="index.html">Aanmelden als bezorger</a>
+
+
+						<!-- Is de navigatie een list?? Of is de eerstde een afbeelding?-->
+						<a id="head" href="index.html"><img class="head" alt="Logo ubereats" src="images/Logoubereats.png"></a>
+					</li>
+					<li>
+						<button id="inlog">Inloggen</button>
+					</li>
+				</ul>
 			</nav>
-			<!-- Is de navigatie een list?? Of is de eerstde een afbeelding?-->
-			<a id="head" href="index.html"><img class="head" alt="Logo ubereats" src="images/Logoubereats.png"></a>
-			<button id="inlog">Inloggen</button>
-		</selection>
+		</section>
 		<!--<img src="images/Inloggen.png" width="100 rem", oude html, is deze hoierboven beter?>-->
 		<!--even voor nu anders kon ik niks zien, ook wil ik misschien andere afbeelding gebruiken, width hier weg!!!-->
 
@@ -53,7 +60,7 @@
 
 		<!--Geen list, maar een form!!, input, select en button!!-->
 
-		<p><a class="link" href="index.html">Inloggen</a> voor je recente adressen</p>
+		<p><a id="link" href="index.html">Inloggen</a> voor je recente adressen</p>
 
 		<!--<img id="background" alt="background" src="images/background.png">-->
 
@@ -64,22 +71,21 @@
 
 	<main>
 		<section>
-			<img alt="App ubereats" src="images/Ubereatsapp.png">
-			<h2>Er is nog veel meer leuks in de iPhone-app.</h2>
+			<article id="apps">
+				<img id="applicatie" alt="App ubereats" src="images/Ubereatsapp.png">
+				<h2>Er is nog veel meer leuks in de iPhone-app.</h2>
+			</article>
 			<button>Download app!
 			</button>
-			<!--<a><img src="images/Downloadapp.png"></a>-->
-			<!--Gebruik ik hier </button> of <a>???, het is een button!!-->
-			<!-- Wat is correct? maak je een button met html of maak je eerst de knop en maak je heb via css-->
 		</section>
+		<!--<a><img src="images/Downloadapp.png"></a>-->
+		<!--Gebruik ik hier </button> of <a>???, het is een button!!-->
+		<!-- Wat is correct? maak je een button met html of maak je eerst de knop en maak je heb via css-->
 
-		<section>
-			<!-- section met swipe side bar, moet ik nog onderzoeken-->
-		</section>
 
-		<section>
+		<section id="fotos">
 			<!-- APARTE ARTICLES VAN MAKEN, moet de section er ook nog omheen?!!-->
-			<article>
+			<article class="illustration">
 				<img alt="illustratie eten" src="images/Afbeelding1.png">
 				<h3>Zorg dat je medewerkers goed eten</h3>
 				<a class="link" href="index.html">Maak een zakelijk account aan</a>
@@ -98,10 +104,6 @@
 
 		</section>
 		<!-- in article h3 (want zit dieper) -->
-
-		<section>
-			<!-- section met swipe side bar, moet ik nog onderzoeken-->
-		</section>
 
 		<section>
 			<h2>Steden bij jou in de buurt</h2>
