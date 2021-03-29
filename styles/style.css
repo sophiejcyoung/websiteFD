@@ -5,7 +5,27 @@
 	box-sizing: border-box;
 }
 
-header {
+@font-face {
+	font-family: 'Uber Move Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Uber Move Medium'), url('UberMoveMedium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Uber Move Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Uber Move Bold'), url('UberMoveBold.woff') format('woff');
+}
+
+/*dit zijn de  fontsen en heb ik via :https://www.cufonfonts.com/font/uber-move-2, ik heb ze eerst geprobeerd te downloaden maar dat lukte helaas niet, toen ondekte ik hie je het anders kon doen namelijk:@font-face {
+   font-family:naamvanhetFont;
+   src:url(naamvanhetFont.extensie);
+}
+ om hem zo voor je website te gebruiken via https://web2.nl/index.php?p=css&a=extern_font_toevoegen, ik ben toen terug naar het font gegaan om dit te doen*/
+
+#uber {
 	background-color: #F6916A;
 	background-image: url("../images/background.png");
 	background-size: contain;
@@ -14,10 +34,27 @@ header {
 	height: 100vh;
 }
 
-#detail header {
+#offer {
 	background-color: white;
-	background-image: none;
-	height: 16em;
+	background-image: url("../images/Mac.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100vh;
+	font-family: 'Uber Move Medium';
+	font-size: 1.25em;
+	color: white;
+	/*hoe haal ik die witte onderkant weg?!?!?!?!*/
+}
+
+#offer img {
+	margin-top: 1em;
+	height: 3em;
+	width: 3.7em;
+}
+
+#offer img:hover {
+	color: gray;
+	/*nog even werkend maken*/
 }
 
 nav ul {
@@ -34,20 +71,19 @@ nav {
 
 #inlog {
 	border-radius: 3em;
-	border-color: white;
 	border-style: none;
 	padding: 1em;
 	width: 6em;
 	height: 3em;
 	font-size: 1em;
+	font-weight: 3em;
 	display: flex;
 	shadow toevoegen
-	/*Why doet deze het niet?*/
+	/*Why doet deze het niet, font weight aanpassen?*/
 }
 
 #detail select,
 button {
-	margin-top: 1em;
 	border-style: none;
 	color: black;
 	font-size: 1em;
@@ -55,18 +91,24 @@ button {
 	height: 2em;
 }
 
-#detail section:first-of-type {
+#drop section:first-of-type {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 0.5em;
 }
 
-#offer {
-	background-image: url("../images/Mac.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 100vh;
-	margin-bottom: 0;
+#drop select {
+	background-color: white;
+	height: 2em;
+	font-size: 1.23em;
 }
+
+#zoek img {
+	height: 2.5em;
+	width: 2.5em;
+}
+
+/*gaat ook niet goed gvd pakt footer mee*/
 
 #search {
 	border-radius: 2em;
@@ -90,7 +132,7 @@ header form {
 /*hoe krijg ik ze onder elkaar, gelukt*/
 
 .bezorg {
-	font-family: sans-serif;
+	font-family: 'Uber Move Medium';
 	font-size: 1em;
 	border: none;
 	padding: 1em;
@@ -109,7 +151,8 @@ button.bezorg:first-of-type {
 
 select {
 	color: black;
-	maak hier nog second of type van
+	background: #F6F6F6;
+	/*opmaak dropdown nog en pijltje moet iets meer naar links*/
 }
 
 
@@ -134,7 +177,6 @@ select {
 }*/
 
 #applicatie {
-
 	height: 6em;
 	width: 6em;
 	display: flex;
@@ -147,27 +189,40 @@ select {
 	justify-content: center;
 }
 
+#apps img {
+	margin-right: 1em;
+}
+
 .illustration {
 	font-size: 1em;
-	margin-left: 0;
+	margin-bottom: 2em;
 }
 
 .illustration h3 {
+	font-family: 'Uber Move Medium';
 	font-size: 1.5em;
+	margin-bottom: 0.5em;
+	margin-top: 1em;
+}
+
+.fotos {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1em;
+	/*grote van de afbeeldingen nog doen*/
 }
 
 main button {
-	font-family: sans-serif;
+	font-family: 'Uber Move Medium';
 	font-size: 1em;
 	border: none;
-	padding: 1em;
-	padding right: 1, 5em;
 	margin: 1em;
 	height: 3.5em;
 	width: 30em;
-	display: flex;
-	justify-content: center;
-	/*Why doet deze het niet?*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*Ik wilde niet teveel classes en id's gebruiken dus ben gaan kijken hoe ik de knop kon centreren op zichzelf, dit heb ik gedaan door er zelf een blok van te maken en dan de margin op auto te zetten. https://www.w3.org/Style/Examples/007/center.nl.html*/
 }
 
 a {
@@ -176,7 +231,7 @@ a {
 }
 
 .link {
-	font-family: bold, sans-serif;
+	font-family: 'Uber Move Bold';
 	text-decoration-color: black;
 }
 
@@ -185,28 +240,20 @@ a {
 }
 
 h1 {
-	display: flex;
-	justify-content: center;
-	font-family: Ubermovemedium;
-	font-family: bold;
-	font-size: 4em;
+	font-family: 'Uber Move Bold';
+	font-size: 2em;
 	padding: 0.5em;
 	margin: 0;
-	/*font doet nog steeds niet wat ik wil ?*/
-
+	/*font weight toepassen ?*/
 }
 
 h2 {
-	margin-left: 1em;
-	font-family: Ubermovemedium;
-	font-family: bold;
-	font-size: 2em;
+	font-family: 'Uber Move Medium';
+	font-size: 1.5em;
 }
 
-/*hoe voeg ik deze font toe?, heb hem wel gedwonload(Ubermovemedium)*/
-
 p {
-	font-family: UberMoveText-Regular, sans-serif;
+	font-family: 'Uber Move Medium';
 }
 
 
@@ -220,15 +267,40 @@ main {
 }
 
 li {
-	font-family: medium, sans-serif;
+	font-family: 'Uber Move Medium';
 	list-style: none;
 	margin-top: 1em;
 }
 
 
 
+/*DETAIL*/
+.menu {
+	font-family: 'Uber Move Medium';
+	display: flex;
+	align-items: flex-start;
+	border-bottom-style: solid;
+	border-bottom-color: #a9a9a9;
+}
 
+.menu a:hover {
+	border-style: solid;
+	/*ik wil hem ook om het plaatje krijgen maar dat kan nu niet omdat flexbox dan niet meer doet wat ik wil*/
+}
 
+.menu img {
+	align-self: flex-end;
+	height: 10em;
+	width: 10em;
+	/*waarom doen deze het niet? ik volg: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#align-self maar kom er niet uit, ook als ik eerst flexbox erbij gebruik doet hij het niet hellluuppp
+	
+	deze site ook nog geprobeerd maar hij werkt niet mee... https://developer.mozilla.org/en-US/docs/Web/CSS/align-self*/
+}
+
+.menu a {
+	text-decoration: none;
+	margin-right: 2em;
+}
 
 /*FOOTER*/
 
@@ -248,9 +320,14 @@ img {
 
 footer a {
 	text-decoration: none;
-	font-size: 20px;
-	font-family: thin sans-serif;
+	font-size: 1.25em;
+	font-family: serif;
 	color: white;
+
+}
+
+footer a:hover {
+	text-decoration: underline;
 }
 
 #logoblack {

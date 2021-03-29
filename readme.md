@@ -6,9 +6,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1.https://www.w3schools.com/tags/ref_pxtoemconversion.asp
+2. https://www.cufonfonts.com/font/uber-move-2
+3. https://web2.nl/index.php?p=css&a=extern_font_toevoegen
+4. https://www.w3.org/Style/Examples/007/center.nl.html
 
 
 
@@ -20,11 +21,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -screenshot(s) van je eindresultaat-
 
+## Voortgang 4 (week 6)
+
+samen feedback gekregen met roos, ik moet svg'tjes nog toevoegen en wat states. Dit gaat prima. robbert zegt dat we  goed opweg zijn en veel vooruitgang hebben gemaakt, ik hoop hem voor woensdag nog een keer te spreken ivm de deadline. Sommige dingen werken nog niet helemaal.
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Dit was een heel kort feedback gesprekje want ik had wat kleine vraagjes over de  code die niet werkte, ben al best ver alleen zoals ik al zei werken sommige dingen nog niet helemaal.
 
 
 

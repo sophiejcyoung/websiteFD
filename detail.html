@@ -13,7 +13,7 @@
 </head>
 
 <body id="detail">
-	<header>
+	<header id="drop">
 		<!-- header weghalen maar over de body bijvoorbeeld zetten en dan #detail head, staat alle content in, body-->
 
 		<!--Geen icon gebruiken maar, button, maak hier een hamburger menu van-->
@@ -40,23 +40,24 @@
 
 		<section>
 			<select name="Dropdown">
-				<option value="deliver">Deliver now</option>
+				<option value="deliver">Deliver now
+				</option>
 				<option value="1hour">1 Hour</option>
 				<option value="2hour">2 Hour</option>
 				<option value="3hour">3 Hour</option>
 				<option value="4hour">4 Hour</option>
 			</select>
-			<button id="search">search icon</button>
+			<a id="zoek" href="index.html"><img src="images/search.png" alt="searchbutton"></a>
 		</section>
 
 	</header>
 
 	<main>
 		<section id="offer">
-			<button type="button">Start group order</button>
-			<button type="button">icon hart</button>
+			<!-- divje was hier erg fijn geweest haha, maar mag denk ik niet-->
+			<a href="index.html"><img src="images/person.png" alt="addperson"></a>
+			<a href="index.html"><img src="images/heart.png" alt="heart"></a>
 			<h2>McDonald's - Albert Cuypstraat</h2>
-			<!--<icon></icon>-->
 			<p>€1.79 Delivery Fee • 10–20 Min • 4.3(200+)</p>
 		</section>
 		<!-- is dit zo goed of?? want bij uber eats is het gehele vlak 1 knop waar je ook klikt-->
@@ -96,76 +97,81 @@
 				<h3>Single Maestro</h3>
 				<p>Zoals een klassieke burger bedoeld is. Te herkennen aan z’n 100% rundvlees...</p>
 				<span>€6.95</span>
-				<!-- is dit een h3?-->
-				<img alt="singlemaestroburger" src="images/singlemaestro.png">
 			</a>
-			<!-- Ik krijg een error dat ik dit niet als button mag gebruiken maar de hele kop is een knoop hoe doe ik dit dan nu? -->
+			<!-- is dit een h3?-->
+			<img alt="singlemaestroburger" src="images/singlemaestro.png">
+
 		</section>
 
-		<section>
-			<h2>Finger Food</h2>
 
+		<h2>Finger Food</h2>
+
+		<section class="menu">
 			<a href="detail.html">
 				<h3>Chicken McNuggets 20</h3>
 				<p>20 stukjes malse kip met een krokant laagje.</p>
 				<span>€5.50</span>
-				<img alt="chickennuggets" src="images/Chickennuggets.png">
 			</a>
+			<img alt="chickennuggets" src="images/Chickennuggets.png">
+
 		</section>
 
-		<section>
-			<h2>Happy Meals</h2>
 
+		<h2>Happy Meals</h2>
+
+		<section class="menu">
 			<a href="detail.html">
 				<h3>Happy Meal Chicken McNuggets 4</h3>
 				<p>Happy Meal met 4 stukjes malse kip met een krokant laagje.</p>
 				<span>€4.60</span>
-				<img alt="happymeal" src="images/happymeal.png">
 			</a>
+			<img alt="happymeal" src="images/happymeal.png">
 		</section>
 
-		<section>
-			<h2>Friet en Sausjes</h2>
+		<h2>Friet en Sausjes</h2>
 
+		<section class="menu">
 			<a href="detail.html">
 				<h3>Franse Frietjes</h3>
 				<p>Goudgele frietjes, gebakken in 100% plantaardige olie.</p>
 				<span>€3.10</span>
-				<img alt="friet" src="images/friet.png">
 			</a>
+			<img alt="friet" src="images/friet.png">
 		</section>
 
-		<section>
-			<h2>Salades</h2>
+		<h2>Salades</h2>
 
+		<section class="menu">
 			<a href="detail.html">
 				<h3>Grilled Chicken Salad - Sweet en Spicy</h3>
 				<p>Een heerlijke groene slamix met gemarineerde en gegrilde kip, friszure rode appelstukjes, maïs,...</p>
 				<span>€5.75</span>
-				<img alt="salade" src="images/friet.png">
 			</a>
+			<img alt="salade" src="images/salade.png">
 		</section>
 
-		<section>
-			<h2>Ijs en Cookies</h2>
 
+		<h2>Ijs en Cookies</h2>
+
+		<section class="menu">
 			<a href="detail.html">
 				<h3>McFlurry Twix met Karamelsaus</h3>
 				<p>Een heerlijke McFlurry met stukjes Twix en smeuïge karamelsaus</p>
 				<span>€4.15</span>
-				<img alt="twixmacflurry" src="images/twixmacflurry.png">
 			</a>
+			<img alt="twixmacflurry" src="images/twixmacflurry.png">
 		</section>
 
-		<section>
-			<h2>Dranken</h2>
 
+		<h2>Dranken</h2>
+
+		<section class="menu">
 			<a href="detail.html">
 				<h3>Coca-Cola Zero Sugar medium</h3>
 				<p>Verfrissende Coca-Cola Zero.</p>
 				<span>€2.95</span>
-				<img alt="cocacola" src="images/Cocacola.png">
 			</a>
+			<img alt="cocacola" src="images/Cocacola.png">
 		</section>
 
 		<footer>
@@ -196,9 +202,9 @@
 			<hr>
 			<!--hoe trek ik die streep, nou met hr-->
 			<ul id='socialmedia'>
-				<li><a><img id='facebook' alt="facebook" src="images/Facebook.png"></a></li>
-				<li><a><img id='twitter' alt="twitter" src="images/Twitter.png"></a></li>
-				<li><a><img id='instagram' alt="instagram" src="images/Instagram.png"></a></li>
+				<li><a href="detail.html"><img id='facebook' alt="facebook" src="images/Facebook.png"></a></li>
+				<li><a href="detail.html"><img id='twitter' alt="twitter" src="images/Twitter.png"></a></li>
+				<li><a href="detail.html"><img id='instagram' alt="instagram" src="images/Instagram.png"></a></li>
 			</ul>
 			<!--ik weet even niet hoe ik deze afbeeldingen moet doen, buttons of linkjes?????> linkjes-->
 
