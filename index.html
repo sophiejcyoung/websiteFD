@@ -42,8 +42,8 @@
 
 		<h1>Heb je trek? Dan ben je op het juiste adres</h1>
 
-		<form id="form">
-			<input class="bezorg" type="text" />
+		<form>
+			<input class="bezorg" type="text" placeholder=" Bezorg adres invoeren" />
 			<!--Hoe krijg ik bezorgadres invoeren in dit vlak?-->
 			<select name="wanneer bezorgen" class="bezorg">
 				<option value="deliver">Zo snel mogelijk</option>
@@ -107,9 +107,9 @@
 		</section>
 		<!-- in article h3 (want zit dieper) -->
 
-		<section class="fotos">
+		<section>
 			<h2>Steden bij jou in de buurt</h2>
-			<img alt="Map Nederland" src="images/Map.png">
+			<img class="map" alt="Map Nederland" src="images/Map.png">
 			<p><a class="link" href="index.html">Alle ruim 500 steden bekijken</a></p>
 		</section>
 
@@ -158,27 +158,31 @@
 		<footer>
 			<img id="logoblack" alt=" logoblack" src="images/Logoblack.png">
 
-			<section id='imgfooter'>
+			<section>
 				<img id='appstore' alt="appstore" src="images/Appstore.png">
 				<img id='googleplay' alt="googleplay" src="images/Googleplay.png">
 			</section>
 
-			<ul>
-				<li><a href="detail.html">Over Uber Eats</a></li>
-				<li><a href="detail.html">Onze blog</a></li>
-				<li><a href="detail.html">Maak een zakelijk account aan</a></li>
-				<li><a href="detail.html">Je restaurant toevoegen</a></li>
-				<li><a href="detail.html">Aanmelden als bezorger</a></li>
-			</ul>
-			<!--moeten dit twee lijsten zijn & MOETEN DEZE OOK IN SECTIONS> nee hoeft niet ul is een section??, HREF MOET ER NOG BIJ-->
-			<ul>
-				<li><a href="detail.html">Hulp krijgen</a></li>
-				<li><a href="detail.html">Alle steden bekijken</a></li>
-				<li><a href="detail.html">Alle landen bekijken</a></li>
-				<li><a href="detail.html">Restaurants bij mij in de buurt</a></li>
-				<li><a href="detail.html">Bespaar op je eerste bestelling</a></li>
-				<li><img id="sign" alt="sign" src="images/Nederlands.png"><a>Nederlands</a></li>
-			</ul>
+			<section class="hulp">
+				<ul>
+					<li><a href="detail.html">Over Uber Eats</a></li>
+					<li><a href="detail.html">Onze blog</a></li>
+					<li><a href="detail.html">Maak een zakelijk account aan</a></li>
+					<li><a href="detail.html">Je restaurant toevoegen</a></li>
+					<li><a href="detail.html">Aanmelden als bezorger</a></li>
+				</ul>
+
+				<!--moeten dit twee lijsten zijn & MOETEN DEZE OOK IN SECTIONS> nee hoeft niet ul is een section??, HREF MOET ER NOG BIJ-->
+
+				<ul>
+					<li><a href="detail.html">Hulp krijgen</a></li>
+					<li><a href="detail.html">Alle steden bekijken</a></li>
+					<li><a href="detail.html">Alle landen bekijken</a></li>
+					<li><a href="detail.html">Restaurants bij mij in de buurt</a></li>
+					<li><a href="detail.html">Bespaar op je eerste bestelling</a></li>
+					<li><img id="sign" alt="sign" src="images/Nederlands.png"><a>Nederlands</a></li>
+				</ul>
+			</section>
 
 			<hr>
 			<!--hoe trek ik die streep, nou met hr-->
@@ -206,4 +210,6 @@
 	</main>
 
 	<script src="scripts/script.js"></script>
-</body></html>
+</body>
+
+</html>

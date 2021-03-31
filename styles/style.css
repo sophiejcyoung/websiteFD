@@ -9,15 +9,22 @@
 	font-family: 'Uber Move Medium';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Uber Move Medium'), url('UberMoveMedium.woff') format('woff');
+	src: local('Uber Move Medium'), url('UberMoveMedium.otf') format('otf');
 }
 
 @font-face {
 	font-family: 'Uber Move Bold';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Uber Move Bold'), url('UberMoveBold.woff') format('woff');
+	src: local('Uber Move Bold'), url('UberMoveBold.otf') format('otf');
 }
+
+@font-face {
+	font-family: "Uber Move Text";
+	src: url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.eot");
+	src: url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.otf") format("otf"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.svg#Uber Move Text") format("svg");
+}
+
 
 /*dit zijn de  fontsen en heb ik via :https://www.cufonfonts.com/font/uber-move-2, ik heb ze eerst geprobeerd te downloaden maar dat lukte helaas niet, toen ondekte ik hie je het anders kon doen namelijk:@font-face {
    font-family:naamvanhetFont;
@@ -37,24 +44,68 @@
 #offer {
 	background-color: white;
 	background-image: url("../images/Mac.png");
-	background-size: contain;
+	background-size: cover;
+	background-position: center;
+	max-height: 25em;
 	background-repeat: no-repeat;
 	height: 100vh;
 	font-family: 'Uber Move Medium';
-	font-size: 1.25em;
 	color: white;
-	/*hoe haal ik die witte onderkant weg?!?!?!?!*/
+
 }
 
-#offer img {
-	margin-top: 1em;
-	height: 3em;
-	width: 3.7em;
+#offer a {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 0.9em;
+	margin-right: 1em;
+	/*hoe krijg ik ze rechts*/
+}
+
+.albert {
+	padding-left: 0.5em;
+	display: flex;
+	justify-content: flex-start;
+	font-family: 'Uber Move Medium';
+	color: white;
+}
+
+#offer h2 {
+	margin-left: 0;
+	margin-top: 0;
+	padding-top: 3em;
+	font-size: 3em;
+}
+
+#offer p {
+	font-size: 1.5em;
+}
+
+
+#addperson {
+	position: absolute;
+	right: 0.2em;
+	height: 2em;
+	/*hoe krijg ik ze rechts*/
+}
+
+#hearts {
+	margin-left: auto;
+	position: absolute;
+	right: 4em;
+	height: 2em;
+	/*hoe krijg ik ze rechts*/
 }
 
 #offer img:hover {
 	color: gray;
-	/*nog even werkend maken*/
+	/*nog even werkend maken of moet dit overlay worden*/
+}
+
+.map {
+	padding: 1em;
+	width: 100%;
+	min-height: 15em;
 }
 
 nav ul {
@@ -78,8 +129,8 @@ nav {
 	font-size: 1em;
 	font-weight: 3em;
 	display: flex;
-	shadow toevoegen
-	/*Why doet deze het niet, font weight aanpassen?*/
+	/*shadow toevoegen*/
+	/*font weight why doet deze het niet, font weight aanpassen?*/
 }
 
 #detail select,
@@ -95,6 +146,13 @@ button {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 0.5em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+form input {
+	font-family: 'Uber Move Medium';
+	font-size: 1em;
 }
 
 #drop select {
@@ -108,13 +166,6 @@ button {
 	width: 2.5em;
 }
 
-/*gaat ook niet goed gvd pakt footer mee*/
-
-#search {
-	border-radius: 2em;
-	search teken nog toevoegen
-}
-
 .head {
 	height: 3em;
 	display: flex;
@@ -123,13 +174,10 @@ button {
 }
 
 
-header form {
+form {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
-
-/*hoe krijg ik ze onder elkaar, gelukt*/
 
 .bezorg {
 	font-family: 'Uber Move Medium';
@@ -198,16 +246,36 @@ select {
 	margin-bottom: 2em;
 }
 
+.illustration img {
+	width: 100vh;
+	height: 15em;
+	doet het niet??????
+}
+
 .illustration h3 {
 	font-family: 'Uber Move Medium';
 	font-size: 1.5em;
 	margin-bottom: 0.5em;
-	margin-top: 1em;
+	margin-left: 0.7em;
+}
+
+.illustration a {
+	margin-left: 1em;
 }
 
 .fotos {
 	display: flex;
 	flex-direction: column;
+	/*grote van de afbeeldingen nog doen*/
+}
+
+.fotos p a {
+	margin-left: 1em;
+}
+
+.fotos img {
+	max-height: 40em;
+	max-width: 30em;
 	margin-left: 1em;
 	/*grote van de afbeeldingen nog doen*/
 }
@@ -227,7 +295,6 @@ main button {
 
 a {
 	color: black;
-
 }
 
 .link {
@@ -250,6 +317,7 @@ h1 {
 h2 {
 	font-family: 'Uber Move Medium';
 	font-size: 1.5em;
+	margin: 1em;
 }
 
 p {
@@ -260,6 +328,7 @@ p {
 
 body {
 	background-color: white;
+	margin: 0;
 }
 
 main {
@@ -275,26 +344,35 @@ li {
 
 
 /*DETAIL*/
+.soort {
+	margin-top: 2em;
+}
+
 .menu {
 	font-family: 'Uber Move Medium';
 	display: flex;
-	align-items: flex-start;
+	justify-content: space-between;
 	border-bottom-style: solid;
 	border-bottom-color: #a9a9a9;
+	margin: 1em;
 }
 
-.menu a:hover {
+/*Ik heb de text in een container(a) en de afbeelding, als ik dan space between doe krig je ze beide aan een kant*/
+
+.menu:hover {
 	border-style: solid;
 	/*ik wil hem ook om het plaatje krijgen maar dat kan nu niet omdat flexbox dan niet meer doet wat ik wil*/
 }
 
+.menu a {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+}
+
 .menu img {
-	align-self: flex-end;
 	height: 10em;
 	width: 10em;
-	/*waarom doen deze het niet? ik volg: https://css-tricks.com/snippets/css/a-guide-to-flexbox/#align-self maar kom er niet uit, ook als ik eerst flexbox erbij gebruik doet hij het niet hellluuppp
-	
-	deze site ook nog geprobeerd maar hij werkt niet mee... https://developer.mozilla.org/en-US/docs/Web/CSS/align-self*/
 }
 
 .menu a {
@@ -302,10 +380,31 @@ li {
 	margin-right: 2em;
 }
 
+.menu p {
+	color: #545454;
+	font-family: "Uber Move Text";
+}
+
+#overzicht {
+	display: none;
+}
+
+.info {
+	margin-left: 1em;
+	font-family: "Uber Move Text";
+	font-size: 0.9em;
+}
+
+#yo {
+	display: none;
+}
+
+
 /*FOOTER*/
 
 footer {
 	background-color: black;
+	padding-bottom: 2em;
 }
 
 footer p {
@@ -320,8 +419,7 @@ img {
 
 footer a {
 	text-decoration: none;
-	font-size: 1.25em;
-	font-family: serif;
+	font-family: "Uber Move Text";
 	color: white;
 
 }
@@ -333,13 +431,13 @@ footer a:hover {
 #logoblack {
 	padding-top: 1rem;
 	width: 20rem;
-	margin-left: 2.5rem;
+	margin-left: 2.5em;
 }
 
 
 #appstore,
 #googleplay {
-	margin-left: 2.5rem;
+	margin-left: 2.5em;
 	width: 10rem;
 }
 
@@ -358,4 +456,143 @@ footer a:hover {
 
 #socialmedia {
 	display: flex;
+}
+
+@media (min-width: 49em) {
+	#overzicht {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#overzicht a {
+		margin: 1em;
+		font-family: "Uber Move Text";
+		text-decoration: none;
+	}
+
+	#overzicht a:hover {
+		color: green;
+	}
+
+	#overzicht a:active {
+		border-bottom: black;
+	}
+
+
+	.hulp {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 1em;
+	}
+
+	footer p {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 1em;
+	}
+
+	footer ul:nth-last-child(3) {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	footer li {
+		padding-right: 0.5em;
+	}
+
+	#appstore,
+	#googleplay {
+		float: left;
+		margin-top: 10em;
+	}
+
+	#twitter,
+	#facebook,
+	#instagram {
+		width: 2em;
+		height: 1.6em;
+	}
+
+	#logoblack {
+		width: 10rem;
+		margin-left: 2.5em;
+	}
+
+	#landen {
+		display: grid;
+		grid-template-columns: 1fr, 1fr, 1fr;
+		grid-template-rows: 1fr, 1fr, 1fr. 1fr;
+		doet het niet
+	}
+
+
+	.fotos {
+		display: flex;
+		grid-column-gap: 1em;
+		flex-direction: row;
+		justify-content: space-around;
+
+	}
+
+	.illustration img {
+		width: 100%;
+	}
+
+	.map {
+		padding: 1em;
+		width: 100%;
+		min-height: 15em;
+	}
+
+	.menu {
+		padding: 0.5em;
+		border-style: solid;
+		border-width: 0.1em;
+		justify-content: space-between;
+		border-style: solid;
+		border-color: #a9a9a9;
+		max-width: 30em;
+	}
+
+	.menu:hover {
+		border-color: #000000;
+	}
+
+	.items {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		border-bottom-style: solid;
+	}
+
+	#zoek img {
+		display: none;
+	}
+
+	#yo {
+		display: flex;
+		justify-items: flex-end;
+		background-color: #eeeeee;
+		border: none;
+		height: 3em;
+		margin-bottom: 0.5em;
+		width: 20em;
+	}
+
+	form {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		width: 70em;
+	}
+
+	#uber {
+	background-color: #F6916A;
+	background-image: url("../images/background.png");
+	background-size: contain;
+background-position: center bottom;
+	max-height: 60em;
+	background-repeat: no-repeat;
+}
+	
 }

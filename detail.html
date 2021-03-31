@@ -48,6 +48,7 @@
 				<option value="4hour">4 Hour</option>
 			</select>
 			<a id="zoek" href="index.html"><img src="images/search.png" alt="searchbutton"></a>
+			<input id="yo" type="text" placeholder=" Waar heb je trek in?" />
 		</section>
 
 	</header>
@@ -55,10 +56,10 @@
 	<main>
 		<section id="offer">
 			<!-- divje was hier erg fijn geweest haha, maar mag denk ik niet-->
-			<a href="index.html"><img src="images/person.png" alt="addperson"></a>
-			<a href="index.html"><img src="images/heart.png" alt="heart"></a>
-			<h2>McDonald's - Albert Cuypstraat</h2>
-			<p>€1.79 Delivery Fee • 10–20 Min • 4.3(200+)</p>
+			<a id="addperson" href="index.html"><img src="images/person.png" alt="addperson"></a>
+			<a id="hearts" href="index.html"><img src="images/heart.png" alt="heart"></a>
+			<h2 class="albert">McDonald's - Albert Cuypstraat</h2>
+			<p class="albert">€1.79 Delivery Fee • 10–20 Min • 4.3(200+)</p>
 		</section>
 		<!-- is dit zo goed of?? want bij uber eats is het gehele vlak 1 knop waar je ook klikt-->
 		<!--bij die tweede button icoon doen of??? moet je dat bij css aanpassen
@@ -66,7 +67,7 @@
 
 		<!--hoe pas ik hier goed een href bij?-->
 
-		<section>
+		<section class="info">
 			<p>
 				€ • Burgers • Fast Food • Diner
 			</p>
@@ -75,7 +76,7 @@
 		</section>
 
 		<section>
-			<nav>
+			<nav id="overzicht">
 				<a href="index.html">Burgers en Voordeelmenu's</a>
 				<a href="index.html">Finger Food</a>
 				<a href="index.html">Happy Meals</a>
@@ -90,114 +91,209 @@
 		<hr>
 
 
-		<h2>Burgers en Voordeelmenu's</h2>
+		<h2 class="soort">Burgers en Voordeelmenu's</h2>
 
-		<section class="menu">
-			<a href="detail.html">
-				<h3>Single Maestro</h3>
-				<p>Zoals een klassieke burger bedoeld is. Te herkennen aan z’n 100% rundvlees...</p>
-				<span>€6.95</span>
-			</a>
-			<!-- is dit een h3?-->
-			<img alt="singlemaestroburger" src="images/singlemaestro.png">
+		<article class=items>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Single Maestro</h3>
+					<p>Zoals een klassieke burger bedoeld is. Te herkennen aan z’n 100% rundvlees...</p>
+					<span>€6.95</span>
+				</a>
+				<!-- is dit een h3?-->
+				<img alt="singlemaestroburger" src="images/singlemaestro.png">
 
-		</section>
+			</section>
 
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Single Maestro</h3>
+					<p>Zoals een klassieke burger bedoeld is. Te herkennen aan z’n 100% rundvlees...</p>
+					<span>€6.95</span>
+				</a>
+				<!-- is dit een h3?-->
+				<img alt="singlemaestroburger" src="images/singlemaestro.png">
 
-		<h2>Finger Food</h2>
+			</section>
 
-		<section class="menu">
-			<a href="detail.html">
-				<h3>Chicken McNuggets 20</h3>
-				<p>20 stukjes malse kip met een krokant laagje.</p>
-				<span>€5.50</span>
-			</a>
-			<img alt="chickennuggets" src="images/Chickennuggets.png">
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Single Maestro</h3>
+					<p>Zoals een klassieke burger bedoeld is. Te herkennen aan z’n 100% rundvlees...</p>
+					<span>€6.95</span>
+				</a>
+				<!-- is dit een h3?-->
+				<img alt="singlemaestroburger" src="images/singlemaestro.png">
 
-		</section>
+			</section>
+		</article>
 
+		<h2 class="soort">Finger Food</h2>
 
-		<h2>Happy Meals</h2>
+		<article class=items>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Chicken McNuggets 20</h3>
+					<p>20 stukjes malse kip met een krokant laagje.</p>
+					<span>€5.50</span>
+				</a>
+				<img alt="chickennuggets" src="images/Chickennuggets.png">
 
-		<section class="menu">
-			<a href="detail.html">
-				<h3>Happy Meal Chicken McNuggets 4</h3>
-				<p>Happy Meal met 4 stukjes malse kip met een krokant laagje.</p>
-				<span>€4.60</span>
-			</a>
-			<img alt="happymeal" src="images/happymeal.png">
-		</section>
+			</section>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Chicken McNuggets 20</h3>
+					<p>20 stukjes malse kip met een krokant laagje.</p>
+					<span>€5.50</span>
+				</a>
+				<img alt="chickennuggets" src="images/Chickennuggets.png">
 
-		<h2>Friet en Sausjes</h2>
+			</section>
+		</article>
 
-		<section class="menu">
-			<a href="detail.html">
-				<h3>Franse Frietjes</h3>
-				<p>Goudgele frietjes, gebakken in 100% plantaardige olie.</p>
-				<span>€3.10</span>
-			</a>
-			<img alt="friet" src="images/friet.png">
-		</section>
+		<h2 class="soort">Happy Meals</h2>
 
-		<h2>Salades</h2>
+		<article class=items>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Happy Meal Chicken McNuggets 4</h3>
+					<p>Happy Meal met 4 stukjes malse kip met een krokant laagje.</p>
+					<span>€4.60</span>
+				</a>
+				<img alt="happymeal" src="images/happymeal.png">
+			</section>
 
-		<section class="menu">
-			<a href="detail.html">
-				<h3>Grilled Chicken Salad - Sweet en Spicy</h3>
-				<p>Een heerlijke groene slamix met gemarineerde en gegrilde kip, friszure rode appelstukjes, maïs,...</p>
-				<span>€5.75</span>
-			</a>
-			<img alt="salade" src="images/salade.png">
-		</section>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Happy Meal Chicken McNuggets 4</h3>
+					<p>Happy Meal met 4 stukjes malse kip met een krokant laagje.</p>
+					<span>€4.60</span>
+				</a>
+				<img alt="happymeal" src="images/happymeal.png">
+			</section>
 
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Happy Meal Chicken McNuggets 4</h3>
+					<p>Happy Meal met 4 stukjes malse kip met een krokant laagje.</p>
+					<span>€4.60</span>
+				</a>
+				<img alt="happymeal" src="images/happymeal.png">
+			</section>
+		</article>
 
-		<h2>Ijs en Cookies</h2>
+		<h2 class="soort">Friet en Sausjes</h2>
 
-		<section class="menu">
-			<a href="detail.html">
-				<h3>McFlurry Twix met Karamelsaus</h3>
-				<p>Een heerlijke McFlurry met stukjes Twix en smeuïge karamelsaus</p>
-				<span>€4.15</span>
-			</a>
-			<img alt="twixmacflurry" src="images/twixmacflurry.png">
-		</section>
+		<article class=items>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Franse Frietjes</h3>
+					<p>Goudgele frietjes, gebakken in 100% plantaardige olie.</p>
+					<span>€3.10</span>
+				</a>
+				<img alt="friet" src="images/friet.png">
+			</section>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Franse Frietjes</h3>
+					<p>Goudgele frietjes, gebakken in 100% plantaardige olie.</p>
+					<span>€3.10</span>
+				</a>
+				<img alt="friet" src="images/friet.png">
+			</section>
+		</article>
 
+		<h2 class="soort">Salades</h2>
 
-		<h2>Dranken</h2>
+		<article class=items>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Grilled Chicken Salad - Sweet en Spicy</h3>
+					<p>Een heerlijke groene slamix met gemarineerde en gegrilde kip, friszure rode appelstukjes, maïs,...</p>
+					<span>€5.75</span>
+				</a>
+				<img alt="salade" src="images/salade.png">
+			</section>
+		</article>
 
-		<section class="menu">
-			<a href="detail.html">
-				<h3>Coca-Cola Zero Sugar medium</h3>
-				<p>Verfrissende Coca-Cola Zero.</p>
-				<span>€2.95</span>
-			</a>
-			<img alt="cocacola" src="images/Cocacola.png">
-		</section>
+		<h2 class="soort">Ijs en Cookies</h2>
+
+		<article class=items>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>McFlurry Twix met Karamelsaus</h3>
+					<p>Een heerlijke McFlurry met stukjes Twix en smeuïge karamelsaus</p>
+					<span>€4.15</span>
+				</a>
+				<img alt="twixmacflurry" src="images/twixmacflurry.png">
+			</section>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>McFlurry Twix met Karamelsaus</h3>
+					<p>Een heerlijke McFlurry met stukjes Twix en smeuïge karamelsaus</p>
+					<span>€4.15</span>
+				</a>
+				<img alt="twixmacflurry" src="images/twixmacflurry.png">
+			</section>
+		</article>
+
+		<h2 class="soort">Dranken</h2>
+
+		<article class=items>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Coca-Cola Zero Sugar medium</h3>
+					<p>Verfrissende Coca-Cola Zero.</p>
+					<span>€2.95</span>
+				</a>
+				<img alt="cocacola" src="images/Cocacola.png">
+			</section>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Coca-Cola Zero Sugar medium</h3>
+					<p>Verfrissende Coca-Cola Zero.</p>
+					<span>€2.95</span>
+				</a>
+				<img alt="cocacola" src="images/Cocacola.png">
+			</section>
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Coca-Cola Zero Sugar medium</h3>
+					<p>Verfrissende Coca-Cola Zero.</p>
+					<span>€2.95</span>
+				</a>
+				<img alt="cocacola" src="images/Cocacola.png">
+			</section>
+		</article>
 
 		<footer>
 			<img id="logoblack" alt=" logoblack" src="images/Logoblack.png">
 
-			<section id='imgfooter'>
+			<section>
 				<img id='appstore' alt="appstore" src="images/Appstore.png">
 				<img id='googleplay' alt="googleplay" src="images/Googleplay.png">
 			</section>
 
-			<ul>
-				<li><a href="detail.html">Over Uber Eats</a></li>
-				<li><a href="detail.html">Onze blog</a></li>
-				<li><a href="detail.html">Maak een zakelijk account aan</a></li>
-				<li><a href="detail.html">Je restaurant toevoegen</a></li>
-				<li><a href="detail.html">Aanmelden als bezorger</a></li>
-			</ul>
-			<!--moeten dit twee lijsten zijn & MOETEN DEZE OOK IN SECTIONS> nee hoeft niet ul is een section??, HREF MOET ER NOG BIJ-->
-			<ul>
-				<li><a href="detail.html">Hulp krijgen</a></li>
-				<li><a href="detail.html">Alle steden bekijken</a></li>
-				<li><a href="detail.html">Alle landen bekijken</a></li>
-				<li><a href="detail.html">Restaurants bij mij in de buurt</a></li>
-				<li><a href="detail.html">Bespaar op je eerste bestelling</a></li>
-				<li><img id="sign" alt="sign" src="images/Nederlands.png"><a>Nederlands</a></li>
-			</ul>
+			<section class="hulp">
+				<ul>
+					<li><a href="detail.html">Over Uber Eats</a></li>
+					<li><a href="detail.html">Onze blog</a></li>
+					<li><a href="detail.html">Maak een zakelijk account aan</a></li>
+					<li><a href="detail.html">Je restaurant toevoegen</a></li>
+					<li><a href="detail.html">Aanmelden als bezorger</a></li>
+				</ul>
+
+				<!--moeten dit twee lijsten zijn & MOETEN DEZE OOK IN SECTIONS> nee hoeft niet ul is een section??, HREF MOET ER NOG BIJ-->
+
+				<ul>
+					<li><a href="detail.html">Hulp krijgen</a></li>
+					<li><a href="detail.html">Alle steden bekijken</a></li>
+					<li><a href="detail.html">Alle landen bekijken</a></li>
+					<li><a href="detail.html">Restaurants bij mij in de buurt</a></li>
+					<li><a href="detail.html">Bespaar op je eerste bestelling</a></li>
+					<li><img id="sign" alt="sign" src="images/Nederlands.png"><a>Nederlands</a></li>
+				</ul>
+			</section>
 
 			<hr>
 			<!--hoe trek ik die streep, nou met hr-->
@@ -225,6 +321,6 @@
 	</main>
 
 	<script src="scripts/script.js"></script>
-</body></html>
+</body>
 
-		
+</html>
