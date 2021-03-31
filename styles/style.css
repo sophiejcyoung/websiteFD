@@ -9,24 +9,28 @@
 	font-family: 'Uber Move Medium';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Uber Move Medium'), url('UberMoveMedium.otf') format('otf');
+	src: local('Uber Move Medium'), url('UberMoveMedium.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Uber Move Bold';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Uber Move Bold'), url('UberMoveBold.otf') format('otf');
+	src: local('Uber Move Bold'), url('UberMoveBold.woff') format('woff');
 }
 
 @font-face {
 	font-family: "Uber Move Text";
 	src: url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.eot");
-	src: url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.otf") format("otf"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.svg#Uber Move Text") format("svg");
+	src: url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.woff") format("woff"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.svg#Uber Move Text") format("svg");
 }
 
 
-/*dit zijn de  fontsen en heb ik via :https://www.cufonfonts.com/font/uber-move-2, ik heb ze eerst geprobeerd te downloaden maar dat lukte helaas niet, toen ondekte ik hie je het anders kon doen namelijk:@font-face {
+/*dit zijn de  fontsen en heb ik via 
+
+https://www.onlinewebfonts.com/download/11469c307f0de6481e3a04cc5d54ae93
+en
+:https://www.cufonfonts.com/font/uber-move-2, ik heb ze eerst geprobeerd te downloaden maar dat lukte helaas niet, toen ondekte ik hie je het anders kon doen namelijk:@font-face {
    font-family:naamvanhetFont;
    src:url(naamvanhetFont.extensie);
 }
@@ -587,12 +591,12 @@ footer a:hover {
 	}
 
 	#uber {
-	background-color: #F6916A;
-	background-image: url("../images/background.png");
-	background-size: contain;
-background-position: center bottom;
-	max-height: 60em;
-	background-repeat: no-repeat;
-}
-	
+		background-color: #F6916A;
+		background-image: url("../images/background.png");
+		background-size: contain;
+		background-position: center bottom;
+		max-height: 60em;
+		background-repeat: no-repeat;
+	}
+
 }
