@@ -9,14 +9,14 @@
 	font-family: 'Uber Move Medium';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Uber Move Medium'), url('UberMoveMedium.woff') format('woff');
+	src: local('Uber Move Medium'), url('./UberMove-Medium.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Uber Move Bold';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Uber Move Bold'), url('UberMoveBold.woff') format('woff');
+	src: local('Uber Move Bold'), url('./UberMove-Bold.woff') format('woff');
 }
 
 @font-face {
