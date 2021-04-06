@@ -36,6 +36,23 @@ en
 }
  om hem zo voor je website te gebruiken via https://web2.nl/index.php?p=css&a=extern_font_toevoegen, ik ben toen terug naar het font gegaan om dit te doen*/
 
+* {
+	z-index: 0;
+}
+
+div {
+	z-index: -1;
+	opacity: 0;
+}
+
+div.show {
+	z-index: 1;
+	opacity: 1;
+}
+
+
+
+
 #uber {
 	background-color: #F6916A;
 	background-image: url("../images/background.png");
@@ -58,12 +75,78 @@ en
 
 }
 
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	padding-right: 2em;
+}
+
+nav ul {
+	display: flex;
+	align-items: flex-start;
+	padding-left: 0.3em;
+	width: 100%;
+	padding-top: 2.5em;
+	flex-direction: column;
+}
+
+nav .nav {
+	text-decoration: none;
+}
+
+
+.hamburger {
+	width: 2em;
+	height: 2em;
+	cursor: pointer;
+}
+
+
+
+nav .hamburger {
+	margin-top: 1em;
+	display: flex;
+	position: absolute;
+	background-color: transparent;
+	border: none;
+}
+
+
+.head {
+	padding: 1em;
+	width: 10em;
+	display: flex;
+	align-items: flex-end;
+}
+
+
+#drop .head {
+	margin-top: 1em;
+}
+
+#inlog {
+	border-radius: 3em;
+	border-style: none;
+	margin-top: 1.5em;
+	padding: 1em;
+	width: 6em;
+	height: 3em;
+	font-size: 1em;
+}
+
 #offer a {
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 0.9em;
 	margin-right: 1em;
-	/*hoe krijg ik ze rechts*/
+}
+
+.map {
+	padding: 1em;
+	width: 100%;
+	min-height: 15em;
 }
 
 .albert {
@@ -98,7 +181,6 @@ en
 	position: absolute;
 	right: 4em;
 	height: 2em;
-	/*hoe krijg ik ze rechts*/
 }
 
 #offer img:hover {
@@ -106,36 +188,11 @@ en
 	/*nog even werkend maken of moet dit overlay worden*/
 }
 
-.map {
-	padding: 1em;
-	width: 100%;
-	min-height: 15em;
+#offer img:active {
+	color: gray;
+	/*nog even werkend maken of moet dit overlay worden*/
 }
 
-nav ul {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	padding: 1em;
-}
-
-nav {
-	display: flex;
-	width: 100%;
-}
-
-#inlog {
-	border-radius: 3em;
-	border-style: none;
-	padding: 1em;
-	width: 6em;
-	height: 3em;
-	font-size: 1em;
-	font-weight: 3em;
-	display: flex;
-	/*shadow toevoegen*/
-	/*font weight why doet deze het niet, font weight aanpassen?*/
-}
 
 #detail select,
 button {
@@ -170,14 +227,6 @@ form input {
 	width: 2.5em;
 }
 
-.head {
-	height: 3em;
-	display: flex;
-	responsive maken
-	/*Why doet deze het niet?*/
-}
-
-
 form {
 	display: flex;
 	flex-direction: column;
@@ -204,29 +253,7 @@ button.bezorg:first-of-type {
 select {
 	color: black;
 	background: #F6F6F6;
-	/*opmaak dropdown nog en pijltje moet iets meer naar links*/
 }
-
-
-
-/*werkt niet...*/
-/*#hamburger {
-  overflow: hidden;
-  background-color: white;
-  position: relative;
-}
-
-.nav {
-	display: none;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}*/
 
 #applicatie {
 	height: 6em;
@@ -253,7 +280,6 @@ select {
 .illustration img {
 	width: 100vh;
 	height: 15em;
-	doet het niet??????
 }
 
 .illustration h3 {
@@ -270,7 +296,6 @@ select {
 .fotos {
 	display: flex;
 	flex-direction: column;
-	/*grote van de afbeeldingen nog doen*/
 }
 
 .fotos p a {
@@ -281,7 +306,6 @@ select {
 	max-height: 40em;
 	max-width: 30em;
 	margin-left: 1em;
-	/*grote van de afbeeldingen nog doen*/
 }
 
 main button {
@@ -315,7 +339,6 @@ h1 {
 	font-size: 2em;
 	padding: 0.5em;
 	margin: 0;
-	/*font weight toepassen ?*/
 }
 
 h2 {
@@ -345,9 +368,6 @@ li {
 	margin-top: 1em;
 }
 
-
-
-/*DETAIL*/
 .soort {
 	margin-top: 2em;
 }
@@ -361,11 +381,10 @@ li {
 	margin: 1em;
 }
 
-/*Ik heb de text in een container(a) en de afbeelding, als ik dan space between doe krig je ze beide aan een kant*/
+/*Ik heb de text in een container(a) en de afbeelding, als ik dan space between doe krijg je ze beide aan een kant*/
 
 .menu:hover {
 	border-style: solid;
-	/*ik wil hem ook om het plaatje krijgen maar dat kan nu niet omdat flexbox dan niet meer doet wat ik wil*/
 }
 
 .menu a {
@@ -403,8 +422,6 @@ li {
 	display: none;
 }
 
-
-/*FOOTER*/
 
 footer {
 	background-color: black;
