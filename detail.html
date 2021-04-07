@@ -14,9 +14,7 @@
 
 <body id="detail">
 	<header id="drop">
-		<!-- header weghalen maar over de body bijvoorbeeld zetten en dan #detail head, staat alle content in, body-->
 
-		<!--Geen icon gebruiken maar, button, maak hier een hamburger menu van-->
 		<nav>
 			<button class="hamburger"><img class="hamburger" src="images/hamburger.png" alt="hamburgermenu"></button>
 			<div id="menu">
@@ -32,13 +30,12 @@
 
 			</div>
 
-			<!-- Is de navigatie een list?? Of is de eerstde een afbeelding?-->
+
 			<a id="head" href="detail.html"><img class="head" alt="whitelogo" src="images/logowhite.png"></a>
 			<button id="inlog">Inloggen</button>
 
 		</nav>
-		<!--<img src="images/Inloggen.png" width="100 rem", oude html, is deze hoierboven beter?>-->
-		<!--even voor nu anders kon ik niks zien, ook wil ik misschien andere afbeelding gebruiken, width hier weg!!!-->
+
 		<hr>
 
 		<section>
@@ -58,38 +55,31 @@
 
 	<main>
 		<section id="offer">
-			<!-- divje was hier erg fijn geweest haha, maar mag denk ik niet-->
-			<a id="addperson" href="index.html"><img src="images/person.png" alt="addperson"></a>
-			<a id="hearts" href="index.html"><img src="images/heart.png" alt="heart"></a>
+			<a id="addperson" href="detail.html"><img src="images/person.png" alt="addperson"></a>
+			<a id="hearts" href="detail.html"><img src="images/heart.png" alt="heart"></a>
 			<h2 class="albert">McDonald's - Albert Cuypstraat</h2>
 			<p class="albert">€1.79 Delivery Fee • 10–20 Min • 4.3(200+)</p>
 		</section>
-		<!-- is dit zo goed of?? want bij uber eats is het gehele vlak 1 knop waar je ook klikt-->
-		<!--bij die tweede button icoon doen of??? moet je dat bij css aanpassen
-			Moet deze in mijn header of main??-->
-
-		<!--hoe pas ik hier goed een href bij?-->
 
 		<section class="info">
 			<p>
 				€ • Burgers • Fast Food • Diner
 			</p>
-			<p>Albert Cuypstraat 75, 1072 Amsterdam, Netherlands, NH 1072 • <a href="">More info</a></p>
-			<!-- moet nog bij href een fake link plaatsen-->
+			<p>Albert Cuypstraat 75, 1072 Amsterdam, Netherlands, NH 1072 • <a href="detail.html">More info</a></p>
 		</section>
 
 		<section>
 			<nav id="overzicht">
-				<a href="index.html">Burgers en Voordeelmenu's</a>
-				<a href="index.html">Finger Food</a>
-				<a href="index.html">Happy Meals</a>
-				<a href="index.html">Friet en Sausjes</a>
-				<a href="index.html">Salades</a>
-				<a href="index.html">Ijs en Cookies</a>
-				<a href="index.html">Dranken</a>
+				<a href="detail.html">Burgers en Voordeelmenu's</a>
+				<a href="detail.html">Finger Food</a>
+				<a href="detail.html">Happy Meals</a>
+				<a href="detail.html">Friet en Sausjes</a>
+				<a href="detail.html">Salades</a>
+				<a href="detail.html">Ijs en Cookies</a>
+				<a href="detail.html">Dranken</a>
 			</nav>
 		</section>
-		<!-- is dit een list of nog een nav?? en zijn dit allemaal linkjes??-->
+		<!--deze nav is anders gestyled dan de andere nav's daarom heb ik deze een aparte id gegeven-->
 
 		<hr>
 
@@ -103,7 +93,18 @@
 					<p>Zoals een klassieke burger bedoeld is. Te herkennen aan z’n 100% rundvlees...</p>
 					<span>€6.95</span>
 				</a>
-				<!-- is dit een h3?-->
+				<img alt="singlemaestroburger" src="images/singlemaestro.png">
+
+			</section>
+			<!--de burgers in een grote article gezet en per menu een section met dezelfde elementen, deze in een class gezert omdat ik hem vaker gebruik namelijk bij elk menu.-->
+
+			<section class="menu">
+				<a href="detail.html">
+					<h3>Single Maestro</h3>
+					<p>Zoals een klassieke burger bedoeld is. Te herkennen aan z’n 100% rundvlees...</p>
+					<span>€6.95</span>
+					<!--nieuwe tool geleerd namelijk de <span> gebruiken voor sommige tekst of p maar ik kies span zodat ik het beter kan stylen (vind robbert slim).-->
+				</a>
 				<img alt="singlemaestroburger" src="images/singlemaestro.png">
 
 			</section>
@@ -114,18 +115,6 @@
 					<p>Zoals een klassieke burger bedoeld is. Te herkennen aan z’n 100% rundvlees...</p>
 					<span>€6.95</span>
 				</a>
-				<!-- is dit een h3?-->
-				<img alt="singlemaestroburger" src="images/singlemaestro.png">
-
-			</section>
-
-			<section class="menu">
-				<a href="detail.html">
-					<h3>Single Maestro</h3>
-					<p>Zoals een klassieke burger bedoeld is. Te herkennen aan z’n 100% rundvlees...</p>
-					<span>€6.95</span>
-				</a>
-				<!-- is dit een h3?-->
 				<img alt="singlemaestroburger" src="images/singlemaestro.png">
 
 			</section>
@@ -286,8 +275,6 @@
 					<li><a href="detail.html">Aanmelden als bezorger</a></li>
 				</ul>
 
-				<!--moeten dit twee lijsten zijn & MOETEN DEZE OOK IN SECTIONS> nee hoeft niet ul is een section??, HREF MOET ER NOG BIJ-->
-
 				<ul>
 					<li><a href="detail.html">Hulp krijgen</a></li>
 					<li><a href="detail.html">Alle steden bekijken</a></li>
@@ -299,13 +286,12 @@
 			</section>
 
 			<hr>
-			<!--hoe trek ik die streep, nou met hr-->
+
 			<ul id='socialmedia'>
 				<li><a href="detail.html"><img id='facebook' alt="facebook" src="images/Facebook.png"></a></li>
 				<li><a href="detail.html"><img id='twitter' alt="twitter" src="images/Twitter.png"></a></li>
 				<li><a href="detail.html"><img id='instagram' alt="instagram" src="images/Instagram.png"></a></li>
 			</ul>
-			<!--ik weet even niet hoe ik deze afbeeldingen moet doen, buttons of linkjes?????> linkjes-->
 
 			<ul>
 				<li><a href="detail.html">Privacybeleid</a></li>
@@ -324,6 +310,4 @@
 	</main>
 
 	<script src="scripts/script.js"></script>
-</body>
-
-</html>
+</body></html>

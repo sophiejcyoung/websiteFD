@@ -10,16 +10,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 2. https://www.cufonfonts.com/font/uber-move-2
 3. https://web2.nl/index.php?p=css&a=extern_font_toevoegen
 4. https://www.w3.org/Style/Examples/007/center.nl.html
+5. https://www.onlinewebfonts.com/download/11469c307f0de6481e3a04cc5d54ae93
+6. https://www.cufonfonts.com/font/uber-move-2
+7. https://www.youtube.com/watch?v=cUXcVWHhsJs, 
+8. https://www.w3schools.com/howto/howto_js_mobile_navbar.asp, 
+9. https://codepen.io/shooft/pen/wvGyvRQ, 
+10. https://javascript.markkamsma.nl/hoofdstuk_7.php
+11. Javascrip en html,css boek
+12. https://www.websonic.nl/tutorials/websitecss/css_z-index.php#:~:text=CSS%20%2D%20Z%2Dindex%2C%20bepaalde%20de%20volgorde&text=Hoe%20lager%20het%20getal%20hoe,of%20position%3Arelative%3B).
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
-
-**Screenshot(s):**
-
--screenshot(s) van je eindresultaat-
+eind gesprek was heel fijn, goeie feedback gehad zodat ik voor mijn herkansing de laatste puntjes op de I kon zetten, ookal is JS mij wel zwaarder gevallen dan ik dacht heb ik wel heel veel geleerd en dan vooral html en css
 
 ## Voortgang 4 (week 6)
 

@@ -40,17 +40,46 @@ en
 	z-index: 0;
 }
 
+/*  met de * roep je alles aan in je document, z-index bapaald de volgorde dus met de regels hieronder overschrijf ik het https://www.websonic.nl/tutorials/websitecss/css_z-index.php#:~:text=CSS%20%2D%20Z%2Dindex%2C%20bepaalde%20de%20volgorde&text=Hoe%20lager%20het%20getal%20hoe,of%20position%3Arelative%3B).*/
+
 div {
+	display: flex;
+	align-items: flex-start;
+	padding-left: 0.3em;
+	width: 150%;
+	padding-top: 3.5em;
+	flex-direction: column;
 	z-index: -1;
 	opacity: 0;
+	margin-bottom: -8em;
 }
+
+nav ul {
+	padding-left: 0;
+}
+
+.nav:hover {
+	color: green;
+}
+
 
 div.show {
 	z-index: 1;
 	opacity: 1;
+	margin-bottom: 0em;
 }
 
+#sluiten {
+	padding: 0.2em;
+	background: black;
+	color: white;
+}
 
+#sluiten:hover {
+	color: green;
+}
+
+/* styling voor het hamburgermenutje, show zorg ervoor dat de opacity niet meer nul is waardoor hij zichtbaar is*/
 
 
 #uber {
@@ -83,14 +112,6 @@ nav {
 	padding-right: 2em;
 }
 
-nav ul {
-	display: flex;
-	align-items: flex-start;
-	padding-left: 0.3em;
-	width: 100%;
-	padding-top: 2.5em;
-	flex-direction: column;
-}
 
 nav .nav {
 	text-decoration: none;
@@ -102,8 +123,6 @@ nav .nav {
 	height: 2em;
 	cursor: pointer;
 }
-
-
 
 nav .hamburger {
 	margin-top: 1em;
@@ -275,22 +294,17 @@ select {
 .illustration {
 	font-size: 1em;
 	margin-bottom: 2em;
+	margin: 1em;
 }
 
 .illustration img {
-	width: 100vh;
-	height: 15em;
+	width: 100%;
 }
 
 .illustration h3 {
 	font-family: 'Uber Move Medium';
 	font-size: 1.5em;
 	margin-bottom: 0.5em;
-	margin-left: 0.7em;
-}
-
-.illustration a {
-	margin-left: 1em;
 }
 
 .fotos {
@@ -298,15 +312,6 @@ select {
 	flex-direction: column;
 }
 
-.fotos p a {
-	margin-left: 1em;
-}
-
-.fotos img {
-	max-height: 40em;
-	max-width: 30em;
-	margin-left: 1em;
-}
 
 main button {
 	font-family: 'Uber Move Medium';
@@ -331,6 +336,10 @@ a {
 }
 
 #link {
+	margin-left: 1em;
+}
+
+#vijf {
 	margin-left: 1em;
 }
 
@@ -539,30 +548,25 @@ footer a:hover {
 		margin-left: 2.5em;
 	}
 
-	#landen {
-		display: grid;
-		grid-template-columns: 1fr, 1fr, 1fr;
-		grid-template-rows: 1fr, 1fr, 1fr. 1fr;
-		doet het niet
-	}
-
-
 	.fotos {
 		display: flex;
 		grid-column-gap: 1em;
 		flex-direction: row;
-		justify-content: space-around;
-
+		padding: 1em;
 	}
 
+	/*de fotos komen nu mooi onder elkaar te staan*/
+
 	.illustration img {
+		min-height: 10em;
 		width: 100%;
+		padding-right: 1em;
 	}
 
 	.map {
 		padding: 1em;
 		width: 100%;
-		min-height: 15em;
+		min-height: 20em;
 	}
 
 	.menu {
@@ -602,9 +606,9 @@ footer a:hover {
 
 	form {
 		display: flex;
+		justify-content: flex-start;
 		flex-direction: row;
-		align-items: flex-start;
-		width: 70em;
+		width: 100%;
 	}
 
 	#uber {

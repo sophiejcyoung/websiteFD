@@ -15,7 +15,6 @@
 <body>
 	<!--staat alle content in, body-->
 	<header id="uber">
-		<!--Geen icon gebruiken maar, button, maak hier een hamburger menu van-->
 
 		<section class="navigation">
 
@@ -33,23 +32,18 @@
 					</ul>
 
 				</div>
-
-
-				<!-- Is de navigatie een list?? Of is de eerstde een afbeelding?-->
+				<!-- ik heb ervoor gekozen om de navigatie in een divje te stoppen, zo kan je de elementen makkelijker aanspreken in js-->
 				<a id="head" href="index.html"><img class="head" alt="orangelogo" src="images/Logoubereats.png"></a>
 				<button id="inlog">Inloggen</button>
 			</nav>
 
-			<!-- is dit een nav of??-->
 		</section>
-		<!--<img src="images/Inloggen.png" width="100 rem", oude html, is deze hoierboven beter?>-->
-		<!--even voor nu anders kon ik niks zien, ook wil ik misschien andere afbeelding gebruiken, width hier weg!!!-->
 
 		<h1>Heb je trek? Dan ben je op het juiste adres</h1>
 
 		<form>
 			<input class="bezorg" type="text" placeholder=" Bezorg adres invoeren" />
-			<!--Hoe krijg ik bezorgadres invoeren in dit vlak?-->
+			<!--dmv input kan je in het vlak typen en door placeholder komt er al tekst te staan en die verwijnt wanneer je er op klikt-->
 			<select name="wanneer bezorgen" class="bezorg">
 				<option value="deliver">Zo snel mogelijk</option>
 				<option value="1hour">1 Hour</option>
@@ -57,19 +51,12 @@
 				<option value="3hour">3 Hour</option>
 				<option value="4hour">4 Hour</option>
 			</select>
-			<button class="bezorg">Gerechten zoeken</button>
-			<!--moet ik met css de tekst in de buttons krijgen??-->
-			<!--<img src="">Bezorgadres invoeren</input>
-			<input><img src="">Nu bezorgen<img src=""></li>
-			<li>Gerechten zoeken</li>, dit is oude versie-->
+			<button class="bezorg" href="index.html">Gerechten zoeken</button>
 		</form>
 
-		<!--Geen list, maar een form!!, input, select en button!!-->
+		<!--Geen list, maar een form!!, input, select en button;)!!-->
 
 		<p><a id="link" href="index.html">Inloggen</a> voor je recente adressen</p>
-
-		<!--<img id="background" alt="background" src="images/background.png">-->
-
 		<!-- uit oefeningen van les twee-->
 
 	</header>
@@ -84,19 +71,15 @@
 			<button>Download app!
 			</button>
 		</section>
-		<!--<a><img src="images/Downloadapp.png"></a>-->
-		<!--Gebruik ik hier </button> of <a>???, het is een button!!-->
-		<!-- Wat is correct? maak je een button met html of maak je eerst de knop en maak je heb via css-->
-
+		<!--Gebruik ik hier </button> of <a>, het is een button!-->
 
 		<section class="fotos">
-			<!-- APARTE ARTICLES VAN MAKEN, moet de section er ook nog omheen?!!-->
 			<article class="illustration">
 				<img alt="illustratie eten" src="images/Afbeelding1.png">
 				<h3>Zorg dat je medewerkers goed eten</h3>
 				<a class="link" href="index.html">Maak een zakelijk account aan</a>
 			</article>
-			<!--Moeten de a'tjes in de p'tjes of alleen een a? JE KAN BETER ALLEEN A GEBRUIKEN WANT HELE TEKST IS EEN LINK-->
+			<!--als de hele tekst een link is kan je beter een a tje gebruiken dan een p in een a:)-->
 			<article class="illustration">
 				<img alt="illustratie pan" src="images/Afbeelding2.png">
 				<h3>Jouw restaurant kan ook thuisbezorgen</h3>
@@ -115,7 +98,7 @@
 		<section>
 			<h2>Steden bij jou in de buurt</h2>
 			<img class="map" alt="Map Nederland" src="images/Map.png">
-			<p><a class="link" href="index.html">Alle ruim 500 steden bekijken</a></p>
+			<p><a id="vijf" href="index.html">Alle ruim 500 steden bekijken</a></p>
 		</section>
 
 		<section>
@@ -190,13 +173,12 @@
 			</section>
 
 			<hr>
-			<!--hoe trek ik die streep, nou met hr-->
+			<!--hoe trek je een streep > nou met hr-->
 			<ul id='socialmedia'>
 				<li><a href="detail.html"><img id='facebook' alt="facebook" src="images/Facebook.png"></a></li>
 				<li><a href="detail.html"><img id='twitter' alt="twitter" src="images/Twitter.png"></a></li>
 				<li><a href="detail.html"><img id='instagram' alt="instagram" src="images/Instagram.png"></a></li>
 			</ul>
-			<!--ik weet even niet hoe ik deze afbeeldingen moet doen, buttons of linkjes?????> linkjes-->
 
 			<ul>
 				<li><a href="detail.html">Privacybeleid</a></li>
@@ -215,6 +197,4 @@
 	</main>
 
 	<script src="scripts/script.js"></script>
-</body>
-
-</html>
+</body></html>
